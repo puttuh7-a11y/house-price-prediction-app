@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",
+    "useDefineForClassFields": true,
+    "lib": ["DOM", "ES2020"],            // ✅ use ES2020 instead of ESNext for better ArrayBuffer typing
+    "jsx": "react-jsx",
+    "module": "ESNext",
+    "moduleResolution": "Node",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,                // ✅ keeps Supabase internal TS errors from breaking build
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "baseUrl": "src"
+  },
+  "include": ["src"]
+}
